@@ -1,66 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.w3-sidebar {width: 120px;background: #222;}
-#main {margin-left: 120px}
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Haylie Belliston</title>
+  <link rel="stylesheet" href="project.css">
+  <style>
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    body {
+      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      width: 100%;
+      background-color: #222;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .navbar a {
+      flex: 1;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    #main {
+      margin-left: 120px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+      }
+      .navbar a {
+        width: 100%;
+      }
+      #main {
+        margin-left: 0;
+      }
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    #about {
+      text-align: center; /* Center the content within #about */
+      padding: 40px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    #about h2 {
+      color: #555;
+    }
+
+    #about hr {
+      width: 200px;
+      border: 0;
+      height: 2px;
+      background-color: #555;
+      margin: 15px auto;
+    }
+
+    #about p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    #about h3 {
+      color: #555;
+      padding-top: 16px;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill p {
+      margin: 0;
+      color: #555;
+    }
+
+    .skill .bar {
+      height: 28px;
+      background-color: #333;
+      margin-top: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
 </head>
 <body>
 
-
-<div>
-  <div>
-    <a style="width:20% !important">HOME</a>
-    <a style="width:20% !important">ABOUT</a>
-    <a style="width:20% !important">PHOTOS</a>
-    <a style="width:20% !important">CONTACT</a>
-  </div>
+<div class="navbar">
+  <a href="#">HOME</a>
+  <a href="#">ABOUT</a>
+  <a href="#">PHOTOS</a>
+  <a href="#">CONTACT</a>
 </div>
 
 <div id="main">
   <header>
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Haylie Belliston</h1>
+    <h1>Haylie Belliston</h1>
   </header>
 
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Name</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Some text about me. Some text about me.</p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">SQL</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
-    </div>
-    <p class="w3-wide">Python</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
-    </div>
-    <p class="w3-wide">Excel/Google Sheets</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-      <p class="w3-wide">Tableau</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
+  <div id="about">
+    <h2>About Me</h2>
+    <hr>
+    <p>
+        Hi, I'm Haylie, an information systems student at Utah State University specializing in data engineering.
+        I graduated from Cyprus High School in 2021, where I built lasting friendships, connected with inspiring mentors,
+        and actively participated in various activities.
+        These experiences not only enriched my life but also equipped me with valuable skills.
+        I earned certifications in business management leadership and sports and entertainment marketing.
+        Reflecting on high school, I recognize the significance of dedication and hard work, grateful for the knowledge and foundation it provided.
+        I believe in the importance of continuous learning and exploration, especially in data-driven decision-making across industries.
+        Get ready to thrive! I'm excited to share valuable insights and help you embark on a rewarding career path.
+    </p>
 
-      </div>
+    <p>
+        <strong>My goal:</strong> Empower you to build a strong professional image.
+        <br>
+        <strong>How?</strong> By providing an introduction to SQL, your data analyst's best friend.
+        I'll guide you on crafting a stellar resume and navigating the professional networking landscape on LinkedIn.
+    </p>
+</div>
+
+
+    <h3>My Skills</h3>
+    
+    <div class="skill">
+      <p>Excel/GoogleSheets</p>
+      <div class="bar" style="width: 85%;"></div>
+    </div>
+
+    <div class="skill">
+      <p>SQL</p>
+      <div class="bar" style="width: 75%;"></div>
+    </div>
+
+    <div class="skill">
+      <p>Tableau</p>
+      <div class="bar" style="width: 60%;"></div>
+    </div>
+
+    <div class="skill">
+      <p>Python</p>
+      <div class="bar" style="width: 55%;"></div>
+    </div>
+
+    <div class="skill">
+      <p>Web Design</p>
+      <div class="bar" style="width: 40%;"></div>
     </div>
   </div>
-  
 
-  <footer>
-
-  </footer>
+<footer>
+    Copyright © 2024 Haylie Belliston
+</footer>
 
 </div>
 
